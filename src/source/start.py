@@ -12,7 +12,7 @@ VENOM = "https://telegra.ph/file/7c97605753018dfa4f832.mp4"
 
 @register(pattern=("/start"))
 async def awake(event):
-  TEXT = f"Heya [{event.sender.first_name}](tg://user?id={event.sender.id}), My name is Emilia Horikita - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.\n\n"
+  TEXT = f"Heya [{event.sender.first_name}](tg://user?id={event.sender.id}), My name is Emilia - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.\n\n"
   TEXT += "Join my [News Channel](t.me/PikachuUpdates) to get information on all the latest updates."
   BUTTON = [[Button.url("➕Add Me To Your Group➕", "https://t.me/EmiliaProBot?startgroup=true"),]]
   await tbot.send_file(event.chat_id, VENOM, caption=TEXT, buttons=BUTTON)
