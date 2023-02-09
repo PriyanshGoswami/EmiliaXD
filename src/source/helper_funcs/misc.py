@@ -71,9 +71,6 @@ def paginate_source(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
     elif calc == 2:
         pairs.append((source[-1],))
 
-    else:
-        pairs += [[EqInlineKeyboardButton("Go Home", callback_data="source_back")]]
-
     return pairs
 
 
